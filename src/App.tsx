@@ -1,10 +1,10 @@
-import LocationReviewApp from "./LocationReviewApp";
+import Landing from "./Landing"
 import "./App.css";
 
 function App() {
   return (
     <>
-      <LocationReviewApp />
+      <Landing />
     </>
   );
 }
