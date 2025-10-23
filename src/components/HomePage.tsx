@@ -11,10 +11,10 @@ interface HomePageProps {
  * The initial landing page to enter property details.
  */
 export function HomePage({ onAnalyze }: HomePageProps) {
-  const [address, setAddress] = useState<string>('123 Main St, Anytown, USA');
+  const [address, setAddress] = useState<string>('1247 Maple Grove Avenue, Portland, OR 97214');
   const [beds, setBeds] = useState<number>(3);
   const [baths, setBaths] = useState<number>(2);
-  const [year, setYear] = useState<number>(1995);
+  const [year, setYear] = useState<number>(2006);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -43,7 +43,7 @@ export function HomePage({ onAnalyze }: HomePageProps) {
             onChange={(e) => setAddress(e.target.value)}
             className="form-input"
             required
-            placeholder="123 Main St, Anytown, USA"
+            placeholder="1247 Maple Grove Avenue, Portland, OR 97214"
           />
         </InputGroup>
 

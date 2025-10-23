@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import type { Property, Assumptions } from './types';
 import { defaultAssumptions, simulatePropertyData } from './utils/defaults';
 import { HomePage } from './components/HomePage';
