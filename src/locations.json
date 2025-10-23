@@ -1,0 +1,412 @@
+{
+    "locations": [
+        {
+            "id": "fr",
+            "name": "France",
+            "type": "country",
+            "reviews": [
+                {
+                    "id": "fr1",
+                    "perspective": "cultural",
+                    "rating": 5,
+                    "comment": "Rich cultural heritage and gastronomy",
+                    "timestamp": "2024-03-15T10:30:00Z"
+                },
+                {
+                    "id": "fr2",
+                    "perspective": "family",
+                    "rating": 4,
+                    "comment": "Great for family vacations",
+                    "timestamp": "2024-03-14T15:20:00Z"
+                }
+            ]
+        },
+        {
+            "id": "idf",
+            "name": "Île-de-France",
+            "type": "cultural-region",
+            "parentId": "fr",
+            "reviews": [
+                {
+                    "id": "idf1",
+                    "perspective": "business",
+                    "rating": 5,
+                    "comment": "Economic heart of France",
+                    "timestamp": "2024-03-10T09:15:00Z"
+                }
+            ]
+        },
+        {
+            "id": "paris-state",
+            "name": "Paris (State)",
+            "type": "state",
+            "parentId": "idf",
+            "reviews": [
+                {
+                    "id": "ps1",
+                    "perspective": "cultural",
+                    "rating": 5,
+                    "comment": "Historic state with incredible heritage",
+                    "timestamp": "2024-03-09T14:20:00Z"
+                }
+            ]
+        },
+        {
+            "id": "paris",
+            "name": "Paris",
+            "type": "city",
+            "parentId": "paris-state",
+            "reviews": [
+                {
+                    "id": "paris1",
+                    "perspective": "adventure",
+                    "rating": 4,
+                    "comment": "Endless places to explore",
+                    "timestamp": "2024-03-12T14:20:00Z"
+                }
+            ]
+        },
+        {
+            "id": "marais",
+            "name": "Le Marais",
+            "type": "neighborhood",
+            "parentId": "paris",
+            "reviews": [
+                {
+                    "id": "marais1",
+                    "perspective": "cultural",
+                    "rating": 5,
+                    "comment": "Historic Jewish quarter with amazing architecture",
+                    "timestamp": "2024-03-08T11:30:00Z"
+                }
+            ]
+        },
+        {
+            "id": "montmartre",
+            "name": "Montmartre",
+            "type": "district",
+            "parentId": "paris",
+            "reviews": [
+                {
+                    "id": "mont1",
+                    "perspective": "cultural",
+                    "rating": 5,
+                    "comment": "Artistic soul of Paris",
+                    "timestamp": "2024-03-07T16:45:00Z"
+                }
+            ]
+        },
+        {
+            "id": "sacre-coeur",
+            "name": "Sacré-Cœur",
+            "type": "place",
+            "parentId": "montmartre",
+            "reviews": [
+                {
+                    "id": "sacre1",
+                    "perspective": "cultural",
+                    "rating": 5,
+                    "comment": "Beautiful basilica with stunning views",
+                    "timestamp": "2024-03-06T13:20:00Z"
+                }
+            ]
+        },
+        {
+            "id": "us",
+            "name": "United States",
+            "type": "country",
+            "reviews": [
+                {
+                    "id": "us1",
+                    "perspective": "adventure",
+                    "rating": 5,
+                    "comment": "Incredible natural diversity",
+                    "timestamp": "2024-03-15T08:30:00Z"
+                }
+            ]
+        },
+        {
+            "id": "west",
+            "name": "Western United States",
+            "type": "cultural-region",
+            "parentId": "us",
+            "reviews": [
+                {
+                    "id": "west1",
+                    "perspective": "adventure",
+                    "rating": 5,
+                    "comment": "Amazing outdoor activities and national parks",
+                    "timestamp": "2024-03-14T09:45:00Z"
+                }
+            ]
+        },
+        {
+            "id": "ca",
+            "name": "California",
+            "type": "state",
+            "parentId": "west",
+            "reviews": [
+                {
+                    "id": "ca1",
+                    "perspective": "adventure",
+                    "rating": 5,
+                    "comment": "From beaches to mountains, has it all",
+                    "timestamp": "2024-03-13T11:20:00Z"
+                }
+            ]
+        },
+        {
+            "id": "sf",
+            "name": "San Francisco",
+            "type": "city",
+            "parentId": "ca",
+            "reviews": [
+                {
+                    "id": "sf1",
+                    "perspective": "cultural",
+                    "rating": 5,
+                    "comment": "Unique city with rich culture",
+                    "timestamp": "2024-03-12T14:15:00Z"
+                }
+            ]
+        },
+        {
+            "id": "mission",
+            "name": "Mission District",
+            "type": "district",
+            "parentId": "sf",
+            "reviews": [
+                {
+                    "id": "mission1",
+                    "perspective": "cultural",
+                    "rating": 5,
+                    "comment": "Amazing food scene and murals",
+                    "timestamp": "2024-03-11T16:30:00Z"
+                }
+            ]
+        },
+        {
+            "id": "haight",
+            "name": "Haight-Ashbury",
+            "type": "neighborhood",
+            "parentId": "sf",
+            "reviews": [
+                {
+                    "id": "haight1",
+                    "perspective": "cultural",
+                    "rating": 4,
+                    "comment": "Historic hippie culture",
+                    "timestamp": "2024-03-10T13:45:00Z"
+                }
+            ]
+        },
+        {
+            "id": "jp",
+            "name": "Japan",
+            "type": "country",
+            "reviews": [
+                {
+                    "id": "jp1",
+                    "perspective": "cultural",
+                    "rating": 5,
+                    "comment": "Perfect blend of tradition and modernity",
+                    "timestamp": "2024-03-15T07:30:00Z"
+                }
+            ]
+        },
+        {
+            "id": "kanto",
+            "name": "Kantō",
+            "type": "cultural-region",
+            "parentId": "jp",
+            "reviews": [
+                {
+                    "id": "kanto1",
+                    "perspective": "business",
+                    "rating": 5,
+                    "comment": "Japan's economic powerhouse",
+                    "timestamp": "2024-03-14T08:45:00Z"
+                }
+            ]
+        },
+        {
+            "id": "tokyo-state",
+            "name": "Tokyo Prefecture",
+            "type": "state",
+            "parentId": "kanto",
+            "reviews": [
+                {
+                    "id": "tokyostate1",
+                    "perspective": "business",
+                    "rating": 5,
+                    "comment": "Global business hub",
+                    "timestamp": "2024-03-13T10:15:00Z"
+                }
+            ]
+        },
+        {
+            "id": "tokyo",
+            "name": "Tokyo",
+            "type": "city",
+            "parentId": "tokyo-state",
+            "reviews": [
+                {
+                    "id": "tokyo1",
+                    "perspective": "adventure",
+                    "rating": 5,
+                    "comment": "Urban exploration paradise",
+                    "timestamp": "2024-03-12T11:30:00Z"
+                }
+            ]
+        },
+        {
+            "id": "shibuya",
+            "name": "Shibuya",
+            "type": "district",
+            "parentId": "tokyo",
+            "reviews": [
+                {
+                    "id": "shibuya1",
+                    "perspective": "adventure",
+                    "rating": 5,
+                    "comment": "Youth culture and shopping hub",
+                    "timestamp": "2024-03-11T13:20:00Z"
+                }
+            ]
+        },
+        {
+            "id": "daikanyama",
+            "name": "Daikanyama",
+            "type": "neighborhood",
+            "parentId": "shibuya",
+            "reviews": [
+                {
+                    "id": "daikan1",
+                    "perspective": "cultural",
+                    "rating": 4,
+                    "comment": "Trendy area with unique boutiques",
+                    "timestamp": "2024-03-10T15:45:00Z"
+                }
+            ]
+        },
+        {
+            "id": "crossing",
+            "name": "Shibuya Crossing",
+            "type": "place",
+            "parentId": "shibuya",
+            "reviews": [
+                {
+                    "id": "crossing1",
+                    "perspective": "adventure",
+                    "rating": 5,
+                    "comment": "World's busiest pedestrian crossing",
+                    "timestamp": "2024-03-09T16:30:00Z"
+                }
+            ]
+        },
+        {
+            "id": "uk",
+            "name": "United Kingdom",
+            "type": "country",
+            "reviews": [
+                {
+                    "id": "uk1",
+                    "perspective": "cultural",
+                    "rating": 5,
+                    "comment": "Rich history and modern culture",
+                    "timestamp": "2024-03-15T06:45:00Z"
+                }
+            ]
+        },
+        {
+            "id": "england",
+            "name": "England",
+            "type": "cultural-region",
+            "parentId": "uk",
+            "reviews": [
+                {
+                    "id": "eng1",
+                    "perspective": "cultural",
+                    "rating": 5,
+                    "comment": "Historic towns and beautiful countryside",
+                    "timestamp": "2024-03-14T07:30:00Z"
+                }
+            ]
+        },
+        {
+            "id": "greater-london",
+            "name": "Greater London",
+            "type": "state",
+            "parentId": "england",
+            "reviews": [
+                {
+                    "id": "gl1",
+                    "perspective": "business",
+                    "rating": 5,
+                    "comment": "Global financial center",
+                    "timestamp": "2024-03-13T09:15:00Z"
+                }
+            ]
+        },
+        {
+            "id": "london",
+            "name": "London",
+            "type": "city",
+            "parentId": "greater-london",
+            "reviews": [
+                {
+                    "id": "ldn1",
+                    "perspective": "cultural",
+                    "rating": 5,
+                    "comment": "World-class museums and theaters",
+                    "timestamp": "2024-03-12T10:45:00Z"
+                }
+            ]
+        },
+        {
+            "id": "soho",
+            "name": "Soho",
+            "type": "district",
+            "parentId": "london",
+            "reviews": [
+                {
+                    "id": "soho1",
+                    "perspective": "cultural",
+                    "rating": 4,
+                    "comment": "Entertainment and nightlife hub",
+                    "timestamp": "2024-03-11T12:30:00Z"
+                }
+            ]
+        },
+        {
+            "id": "covent",
+            "name": "Covent Garden",
+            "type": "neighborhood",
+            "parentId": "london",
+            "reviews": [
+                {
+                    "id": "covent1",
+                    "perspective": "cultural",
+                    "rating": 5,
+                    "comment": "Historic market and street performers",
+                    "timestamp": "2024-03-10T14:20:00Z"
+                }
+            ]
+        },
+        {
+            "id": "big-ben",
+            "name": "Big Ben",
+            "type": "place",
+            "parentId": "london",
+            "reviews": [
+                {
+                    "id": "bigben1",
+                    "perspective": "cultural",
+                    "rating": 5,
+                    "comment": "Iconic London landmark",
+                    "timestamp": "2024-03-09T15:45:00Z"
+                }
+            ]
+        }
+    ]
+}
